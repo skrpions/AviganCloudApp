@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dp activity_formulario_contacto.xml -->
+    <dimen name="margen_general">16dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="marginbutton_recycler">70dp</dimen>
+    <dimen name="marginbutton_floating">90dp</dimen>
+
+
+</resources>
