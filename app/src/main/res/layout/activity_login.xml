@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/portadalogin"/>
+        app:srcCompat="@drawable/portada_login"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/imageCard"
@@ -59,8 +59,8 @@
         android:id="@+id/inputUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="5dp"
         app:startIconTint="@color/marine_500"
         app:startIconDrawable="@drawable/ic_baseline_person_24"
@@ -88,18 +88,19 @@
         android:id="@+id/inputClave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="5dp"
         app:startIconTint="@color/marine_500"
-        app:startIconDrawable="@drawable/ic_baseline_lock_24"
-        app:endIconMode="custom"
+        app:startIconDrawable="@drawable/ic_security"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputUsuario"
-        app:layout_constraintVertical_bias="0.02">
+        app:layout_constraintVertical_bias="0.02"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/primary">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etClave"
@@ -114,13 +115,8 @@
 
 
     <!-- =========== Start :: Olvido Clave ============ -->
-    <!-- =========== End :: Olvido Clave ============ -->
-
-
-    <!-- =========== Start :: Botón Login ==== -->
-
     <TextView
-        android:id="@+id/olvidoClave"
+        android:id="@+id/tvOlvidoClave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -134,31 +130,36 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputClave" />
+    <!-- =========== End :: Olvido Clave ============ -->
 
-    <Button
-        android:id="@+id/btnLogin"
+    <!-- =========== Start :: Botón Login ==== -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnIniciar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="108dp"
         android:background="@drawable/btn_general"
+        app:backgroundTintMode="add"
+        app:backgroundTint="@null"
         android:gravity="center"
         android:text="INICIAR"
         android:textAllCaps="true"
         android:textColor="@drawable/txt_btn_general"
         android:textStyle="bold"
-        app:icon="@drawable/icon_google"
-        app:iconGravity="textStart"
+        android:theme="@style/Theme.MaterialComponents.Light.Bridge"
+        app:icon="@drawable/login_24"
+        app:iconGravity="textEnd"
         app:iconPadding="10dp"
-        app:iconTint="@color/white"
+        app:iconTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/olvidoClave"
-        app:layout_constraintVertical_bias="0.201" />
-    <!-- =========== End :: Botón Login ==== -->
+        app:layout_constraintTop_toBottomOf="@+id/tvOlvidoClave"
+        app:layout_constraintVertical_bias="0.201"/>
+         <!--  =========== End :: Botón Login ==== -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

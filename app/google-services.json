@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "191745300564",
+    "project_id": "avigan-cloud",
+    "storage_bucket": "avigan-cloud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191745300564:android:bad026c163a3de9ac7b5c1",
+        "android_client_info": {
+          "package_name": "com.atlanticssoft.avigancloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191745300564-orhbnl5r3io4h98jv4oupbbf2jlfmtgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.atlanticssoft.avigancloud",
+            "certificate_hash": "30befb8413b688bd3ef2ac34fb9ce413a91cf85d"
+          }
+        },
+        {
+          "client_id": "191745300564-4fsikadjvnqieimashs8tf5grshfjmvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHf42JmowWu88wHpv-UPP1GXfqvD_u7XU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191745300564-4fsikadjvnqieimashs8tf5grshfjmvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
