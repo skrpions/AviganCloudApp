@@ -22,10 +22,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-public class Inicio extends AppCompatActivity {
+public class Acceso extends AppCompatActivity {
 
     // Views de la Interfaz Gráfica
     Button btnGoogle;
@@ -48,7 +47,7 @@ public class Inicio extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio);
+        setContentView(R.layout.activity_acceso);
 
         // Status bar transparente
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -79,7 +78,7 @@ public class Inicio extends AppCompatActivity {
         txtIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Inicio.this, Login.class);
+                Intent intent = new Intent(Acceso.this, Login.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
@@ -149,9 +148,9 @@ public class Inicio extends AppCompatActivity {
                         //FirebaseUser user = mAuth.getCurrentUser();
                         //Iniciar DASHBOARD u otra actividad luego del SigIn Exitoso
 
-                        Intent dashboardActivity = new Intent(Inicio.this, MainActivity.class);
+                        Intent dashboardActivity = new Intent(Acceso.this, MainActivity.class);
                         startActivity(dashboardActivity);
-                        Inicio.this.finish();
+                        Acceso.this.finish();
 
                     }
                     else

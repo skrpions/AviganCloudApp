@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Inicio"
+    tools:context=".Acceso"
     android:background="@drawable/bgcowcompleto4">
 
-
+    <!-- Start :: Botón de Acceso con Google
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGoogle"
         android:layout_width="0dp"
@@ -30,7 +30,32 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"/>
+        End :: Botón de Acceso con Google -->
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAcceso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/btn_dos"
+        android:gravity="center"
+        android:text="Acceso"
+        android:textAllCaps="true"
+        android:textColor="@drawable/txt_btn_dos"
+        android:textStyle="bold"
+        android:theme="@style/Theme.MaterialComponents.Light.Bridge"
+        app:icon="@drawable/icon_google"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:iconTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!--
     <TextView
         android:id="@+id/txtcuenta"
         android:layout_width="wrap_content"
@@ -63,7 +88,6 @@
         app:layout_constraintStart_toEndOf="@+id/txtcuenta"
         app:layout_constraintTop_toBottomOf="@+id/btnGoogle"
         app:layout_constraintVertical_bias="0.086"
-        android:layout_marginStart="16dp"/>
-
+        android:layout_marginStart="16dp"/> -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

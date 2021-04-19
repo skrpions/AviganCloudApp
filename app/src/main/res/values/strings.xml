@@ -12,5 +12,6 @@
     <string name="facebook_icon">facebook icon</string>
     <string name="new_user_register_now">New User? Register Now</string>
     <string name="IniciaSesión"><u>Inicia Sesión</u></string>
+    <string name="transicion_foto">animacion_foto</string>
 
 </resources>

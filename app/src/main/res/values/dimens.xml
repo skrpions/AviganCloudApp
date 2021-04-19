@@ -5,6 +5,14 @@
     <dimen name="margin">16dp</dimen>
     <dimen name="marginbutton_recycler">70dp</dimen>
     <dimen name="marginbutton_floating">90dp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="carview_elevation">10dp</dimen>
+    <dimen name="WidthEight_Foto">120</dimen>
+    <dimen name="marginTopButton_Foto">10dp</dimen>
+
+    <!-- Sp cardview_mascota.xml -->
+    <dimen name="size_tvNombre">18sp</dimen>
+    <dimen name="size_tvDatos">15sp</dimen>
 
 
 </resources>

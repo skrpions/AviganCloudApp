@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_ganadolechero"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/carview_elevation"
+    app:cardCornerRadius="@dimen/corner_radius"
+    android:layout_margin="@dimen/margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/portada"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/holstein1"/>
+
+        <RelativeLayout
+            android:id="@+id/degradadp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/gradient"
+            >
+
+        </RelativeLayout>
+
+        <!-- =========== Start :: Avatar Perfil ============ -->
+        <ImageView
+            android:id="@+id/ivAreteCv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/arete"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/portada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/portada"
+            app:layout_constraintVertical_bias="0.45"/>
+
+        <!--
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageCard"
+            android:layout_width="120dp"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="10dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="@+id/portada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/portada"
+            app:layout_constraintVertical_bias="0.45"> -->
+
+            <!-- =========== Start :: Avatar Perfil ============
+            <ImageView
+                android:id="@+id/ivAreteCv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/arete"
+                android:padding="3dp"/>
+
+
+            =========== End :: Avatar Perfil ============
+        </androidx.cardview.widget.CardView> -->
+
+        <TextView
+            android:id="@+id/nombreCv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/ivAreteCv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="205dp"
+            android:text="Karla"
+            android:textColor="#C9FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:textSize="28dp"
+            />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Ternera:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toEndOf="@+id/ivAreteCv"
+            app:layout_constraintTop_toBottomOf="@+id/portada" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Activa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toEndOf="@+id/ivAreteCv"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Edad:"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.594"
+            app:layout_constraintStart_toEndOf="@+id/ivAreteCv"
+            app:layout_constraintTop_toBottomOf="@+id/portada" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="24 Meses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.732"
+            app:layout_constraintStart_toEndOf="@+id/ivAreteCv"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivAreteCv"
+            app:layout_constraintVertical_bias="0.072">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- =========== Start :: Hueso White ============ -->
+                <ImageButton
+                    android:id="@+id/btnHuesoWhite"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icon_usuario"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/white"/>
+                <!-- =========== End :: Hueso White ============ -->
+
+
+                <!-- =========== Start :: Nombre ============ -->
+                <TextView
+                    android:id="@+id/tvNombreCv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arnobio Martínez"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/size_tvNombre"
+                    android:layout_toRightOf="@id/btnHuesoWhite"
+                    android:layout_centerVertical="true"/>
+                <!-- =========== End :: Nombre ============ -->
+
+
+
+
+
+
+                <!-- =========== Start :: Hueso Yellow ============ -->
+                <ImageButton
+                    android:id="@+id/btnHuesoYellow"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icon_flor"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white"/>
+                <!-- =========== Start :: Hueso Yellow ============ -->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- =========== Start :: Contador ============ -->
+        <TextView
+            android:id="@+id/tvCodigoCv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34"
+            android:textColor="#C9FFFFFF"
+            android:textSize="42dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivAreteCv"
+            app:layout_constraintEnd_toEndOf="@+id/ivAreteCv"
+            app:layout_constraintHorizontal_bias="0.493"
+
+            app:layout_constraintStart_toStartOf="@+id/ivAreteCv"
+            app:layout_constraintTop_toTopOf="@+id/ivAreteCv"
+            app:layout_constraintVertical_bias="0.779" />
+        <!-- =========== End :: Contador ============ -->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

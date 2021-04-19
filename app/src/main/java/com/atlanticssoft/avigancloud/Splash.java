@@ -37,7 +37,7 @@ public class Splash extends AppCompatActivity {
             {
                 // Salto a la actividad de inicio
                 progressBar.setVisibility(View.GONE);
-                Intent intent = new Intent(Splash.this, Inicio.class);
+                Intent intent = new Intent(Splash.this, Acceso.class);
                 startActivity(intent);
 
                 finish();
